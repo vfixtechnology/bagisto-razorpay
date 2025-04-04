@@ -1,8 +1,7 @@
 {
     "name": "vfixtechnology/bagisto-razorpay",
-    "description": "Razorpay payment gateway for bagisto",
-    "version": "1.0.0",
-    "type": "composer-plugin",
+    "description": "Razorpay payment gateway for Bagisto",
+    "type": "library",  
     "license": "MIT",
     "autoload": {
         "psr-4": {
@@ -11,10 +10,14 @@
     },
     "authors": [
         {
-            "name": "Arun chahar",
+            "name": "Arun Chahar",
             "email": "info@vfixtechnology.com"
         }
     ],
     "minimum-stability": "stable",
-    "require": {}
+    "require": {
+        "php": "^7.4|^8.0",
+        "laravel/framework": "^10.0|^11.0",
+        "bagisto/bagisto": "^2.0" 
+    }
 }
