@@ -1,35 +1,35 @@
-# Razorpay Payment Gateway Integration for Bagisto by Vfix Technology
+# Nexus Theme for Bagisto by Vfix Technology
 
-This package provides a seamless integration of Razorpay payment gateway with Bagisto applications.
-
+A premium, high-performance theme for Bagisto e-commerce platform with modern design and seamless integration.
 ## Installation
 
 1. Install the package via Composer:
 
 ```php
-composer require vfixtechnology/bagisto-razorpay
+composer require vfixtechnology/bagisto-nexus-theme
 ```
 
-2. Register the Razorpay service provider in Bootstrap/providers.php:
+2. Register the Nexus theme to service provider in Bootstrap/providers.php:
  ```php
-  Vfixtechnology\Razorpay\Providers\RazorpayServiceProvider::class,
+  Vfixtechnology\NexusTheme\Providers\NexusThemeServiceProvider::class,
  ```
+The theme will automatically:
 
-3. Navigate to your admin panel:
+Install required npm dependencies
+
+Build frontend assets
+
+Register itself in Bagisto's theme system
+
+3. Activate the theme in Admin Panel:
 Go to Configure/Payment Methods
-Razorpay will appear at the end of the payment method list
+Configure → Themes → Shop Themes → Select "Nexus"
 
-4. Add the Razorpay route to CSRF token verification exceptions in bootstrap/app.php withMiddleware(function (Middleware $middleware) :
+4. Clear caches (recommended):
  ```php
-$middleware->validateCsrfTokens(except: [
-    '/razorpaycheck',
-]);
+php artisan optimize:clear
  ```
 
-5. Clear your configuration cache:
-```php
-php artisan config:cache
-```
 
 ## Support This Project
 
