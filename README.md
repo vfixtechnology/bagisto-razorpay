@@ -7,7 +7,7 @@ This package provides a seamless integration of Razorpay payment gateway with Ba
 1. Install the package via Composer:
 
 ```php
-composer require vfixtechnology/razorpay
+composer require vfixtechnology/bagisto-razorpay
 ```
 
 2. Register the Razorpay service provider in Bootstrap/providers.php:
