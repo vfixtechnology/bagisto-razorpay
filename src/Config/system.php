@@ -3,7 +3,7 @@
 return [
     [
         'key'    => 'sales.payment_methods.razorpay',
-        'info'   => 'RazorPay extension created for Vfix Technology.',
+        'info' => 'Razorpay extension created for Bagisto by <a href="https://www.vfixtechnology.com" target="_blank" style="color: blue;">Vfix Technology</a>.',
         'name'   => 'Razorpay',
         'sort'   => 5,
         'fields' => [

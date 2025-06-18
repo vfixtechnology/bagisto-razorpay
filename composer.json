@@ -1,5 +1,5 @@
 {
-    "name": "vfixtechnology/razorpay",
+    "name": "vfixtechnology/bagisto-razorpay",
     "description": "Razorpay payment gateway for bagisto laravel open source ecommerce platform.",
     "license": "MIT",
     "autoload": {
